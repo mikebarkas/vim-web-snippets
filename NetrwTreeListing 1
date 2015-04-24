@@ -1,0 +1,6 @@
+../
+snippets/
+| .git/
+| html/
+| | html.snippets
+| README.md
