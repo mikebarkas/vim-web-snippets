@@ -2,4 +2,4 @@
 
 A small collection of basic snippets used in Web development.
 
-Includes: HTML, CSS, SASS, PHP, JS
+Includes: HTML, ...
