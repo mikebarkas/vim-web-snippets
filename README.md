@@ -2,7 +2,10 @@
 
 A small collection of basic snippets used in Web development.
 
-Includes: HTML, CSS, PHP, ... (_coming soon: SCSS, JS, JQUERY, PY_)
+
+Includes: HTML, CSS, PHP, ... (_under development: SCSS, JS, JQUERY, PY_)
+
+----
 
 **Dependency**
 
