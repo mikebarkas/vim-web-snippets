@@ -2,6 +2,19 @@
 # PHP Snippets
 #
 
+snippet <?
+	<?php
+
+	${0}
+snippet ec
+	echo ${1};
+snippet ?e
+	<?php echo ${1}; ?>
+snippet ?
+	<?php ${1} ?>
+snippet ?:
+	$${1:var} = ${2:true} ? ${3:var} : ${0};
+
 # Docblock
 snippet /*
 	/**
@@ -10,9 +23,29 @@ snippet /*
 	${0}
 
 snippet func
-	function ${1} (${2}) {
+	function ${1:function-name} (${2:args}) {
 		${0}
 	}
+
+# Class
+snippet class
+	/**
+	 * ${1:Class description}
+	 */
+	class ${2:ClassName} {
+		${0}
+	}
+
+snippet meth
+	/**
+	 * ${1:Method Description}
+	 */
+	${2:protected} function ${3:funcName} () {
+		${0}
+	}
+
+snippet t.
+	$this->${0}
 
 # Conditionals
 snippet if
@@ -24,3 +57,70 @@ snippet ifn
 	if (!${1:/* !condition */}) {
 		${0}
 	}
+
+snippet el
+	else {
+		${0}
+	}
+
+# Loops
+snippet for
+	for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) {
+		${0}
+	}
+
+snippet foreach
+	foreach (${1:var} as ${2:value}) {
+		${0}
+	}
+
+snippet foreachkv
+	foreach (${1:var} as $${2:key} => $${3:value}) {
+		${0}
+	}
+
+snippet while
+	while (${1:condition}) {
+		${0}
+	}
+
+# Array
+snippet arr-
+	$${1:arrayName} = array();
+
+snippet arr
+	$${1:arrayName} = array('${2:val}', '${3:val}', '${4:val}');
+
+snippet arr+
+	$${1:arrayName} = array(
+		'${2:key}' => $${3:value},
+		'${4:key}' => $${5:value}
+	);
+
+# Pre and Dump
+snippet vd
+	var_dump(${1});
+snippet pr
+	print_r(${1});
+snippet pd
+	echo '<pre>'; var_dump(${1}); echo '</pre>';
+
+# Server variables
+snippet G
+	$_GET['${1:variable}']
+snippet P
+	$_POST['${1:variable}']
+snippet S
+	$_SERVER['${1:variable}']
+snippet SS
+	$_SESSION['${1:variable}']
+
+# Includes
+snippet inc
+	include '${1:file}';
+snippet inc1
+	include_once '${1:file}';
+snippet req
+	require '${1:file}';
+snippet req1
+	require_once '${1:file}';
