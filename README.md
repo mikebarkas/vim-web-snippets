@@ -2,7 +2,7 @@
 
 A small collection of basic snippets used in Web development.
 
-Includes: HTML, PHP, ...
+Includes: HTML, CSS, PHP, . ..
 
 **Installation**
 * Clone this repo into a directory named `/snippets/` in your `$VIMRUNTIME` path.
