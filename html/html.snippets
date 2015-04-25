@@ -81,10 +81,66 @@ snippet h3
 snippet h3.
 	<h3 class="${1}">${0}</h3>
 
+#
 # Attributes
+#
+snippet .
+	class="${1}" ${0}
+snippet #
+	id="${1}" ${0}
+snippet alt
+	alt="${1}"
+snippet href
+	href="${1}"
+snippet name
+	name="${1}"
+snippet rel
+	rel="${1}"
+snippet src
+	src="${1}"
 
+#
+# Lists
+#
+snippet ul.
+	<ul class="${1}">
+		${0}
+	</ul>
 
+snippet ul#
+	<ul id="${1}">
+		${0}
+	</ul>
+
+snippet li
+	<li>${1}</li>
+	${0}
+
+snippet li.
+	<li class="${1}">${2}</li>
+	${0}
+
+snippet lia
+	<li class="${1}" href="${2:#}">${3}</li>
+	${0}
+
+#
+# Anchors
+#
+snippet a
+	<a href="${1:#}">${0:$1}</a>
+snippet a.
+	<a class="${1}" href="${2:#}">${0}</a>
+snippet a#
+	<a id="${1}" href="${2:#}">${0}</a>
+snippet a.ext
+	<a class="${1:external-link}" href="${2:#}" target="_blank">${0}</a>
+snippet a.mail
+	<a class="${1:email-link}" href="mailto:${2:name@email.net}?subject=${3:subject}">${0:Email}</a>
+
+#
 # Forms
+#
 snippet
 	<form action="${1}" method="${2:post}">
 		${0}
