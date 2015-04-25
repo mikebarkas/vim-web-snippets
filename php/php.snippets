@@ -2,6 +2,7 @@
 # PHP Snippets
 #
 
+
 snippet <?
 	<?php
 
@@ -15,6 +16,7 @@ snippet ?
 snippet ?:
 	$${1:var} = ${2:true} ? ${3:var} : ${0};
 
+
 # Docblock
 snippet /*
 	/**
@@ -26,6 +28,7 @@ snippet func
 	function ${1:function-name} (${2:args}) {
 		${0}
 	}
+
 
 # Class
 snippet class
@@ -47,6 +50,7 @@ snippet meth
 snippet t.
 	$this->${0}
 
+
 # Conditionals
 snippet if
 	if (${1:/* condition */}) {
@@ -62,6 +66,7 @@ snippet el
 	else {
 		${0}
 	}
+
 
 # Loops
 snippet for
@@ -84,6 +89,7 @@ snippet while
 		${0}
 	}
 
+
 # Array
 snippet arr-
 	$${1:arrayName} = array();
@@ -97,13 +103,15 @@ snippet arr+
 		'${4:key}' => $${5:value}
 	);
 
-# Pre and Dump
+
+# Dump and Print
 snippet vd
 	var_dump(${1});
 snippet pr
 	print_r(${1});
 snippet pd
 	echo '<pre>'; var_dump(${1}); echo '</pre>';
+
 
 # Server variables
 snippet G
@@ -114,6 +122,7 @@ snippet S
 	$_SERVER['${1:variable}']
 snippet SS
 	$_SESSION['${1:variable}']
+
 
 # Includes
 snippet inc
