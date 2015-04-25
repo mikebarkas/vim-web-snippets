@@ -3,7 +3,7 @@
 #
 
 #
-# Structure
+# Elements
 #
 # Aside
 snippet aside
@@ -64,6 +64,9 @@ snippet footer
 	<footer>
 		${0}
 	</footer>
+
+snippet img
+	<img class="${1}" src="${2}" alt="${3}" />
 
 #
 # Headings
@@ -146,7 +149,10 @@ snippet a.mail
 #
 # Forms
 #
-snippet
+snippet form
 	<form action="${1}" method="${2:post}">
 		${0}
 	</form>
+
+snippet	input
+	<input type="${1:text}" class="${2}" name="${3}" id="${4}" value="${5}" />
