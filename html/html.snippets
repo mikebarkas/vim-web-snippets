@@ -72,25 +72,25 @@ snippet img
 # Headings
 #
 snippet h1
-	<h1>${0}</h1>
+	<h1>${1}</h1>
 snippet h1.
-	<h1 class="${1}">${0}</h1>
+	<h1 class="${1}">${2}</h1>
 snippet h2
-	<h2>${0}</h2>
+	<h2>${1}</h2>
 snippet h2.
-	<h2 class="${1}">${0}</h2>
+	<h2 class="${1}">${2}</h2>
 snippet h3
-	<h3>${0}</h3>
+	<h3>${1}</h3>
 snippet h3.
-	<h3 class="${1}">${0}</h3>
+	<h3 class="${1}">${2}</h3>
 
 #
 # Attributes
 #
 snippet .
-	class="${1}" ${0}
+	class="${1}"${2}
 snippet #
-	id="${1}" ${0}
+	id="${1}"${2}
 snippet alt
 	alt="${1}"
 snippet href
@@ -156,3 +156,34 @@ snippet form
 
 snippet	input
 	<input type="${1:text}" class="${2}" name="${3}" id="${4}" value="${5}" />
+
+#
+# Meteor HTML Snippets
+#
+snippet template
+	<template name="${1}">
+		${2}
+	</template>
+
+snippet include
+	{{> ${1}}}
+
+snippet each
+	{{#each ${1}}}
+		${2}
+	{{/each}}
+
+snippet link
+	{{#linkTo "${1}"}}
+		${2}
+	{{/linkTo}}
+
+snippet block
+	{{#${1}}}
+		${2}
+	{{/$1}}
+
+snippet with
+	{{#with $[1}}}
+		${2}
+	{{/with}}
