@@ -1,0 +1,88 @@
+#
+# Javascript Snippets
+#
+
+
+#
+# Meteor Javascript Snippets
+#
+
+# Templates
+snippet temphelp
+	Template.${1:name}.helpers({
+		${2}
+	});
+
+snippet tempevent
+	Template.${1:name}.events({
+		${2}
+	});
+
+
+# Pub Sub
+snippet pub
+	Meteor.publish('${1:name}', function () {
+		${2}
+	});
+
+snippet sub
+	Meteor.subscribe('${1:name}');
+
+
+# Iron Router
+snippet route
+	Router.route('${1}', {
+		name:	'${2}',
+		controller:	'${3}',
+		action: '${4}'
+	});
+
+snippet routemap
+	Router.map(function () {
+		${1}
+	});
+
+snippet routeconf
+	Router.configure({
+		${1}
+	});
+
+
+# Session
+snippet sset
+	Session.set('${1:key}', ${2:value});
+snippet sget
+	Session.get('${1:key}');
+
+
+# Tracker
+snippet auto
+	Tracker.autorun(functon (c) {
+		${1}
+	});
+
+
+# Environment
+snippet client
+	if (Meteor.isClient) {
+		${1}
+	}
+
+snippet server
+	if (Meteor.isServer) {
+		${1}
+	}
+
+
+# RPC Method
+snippet methods
+	Meteor.methods({
+		${1}
+	});
+
+
+# Startup
+snippet startup
+	Meteor.startup(function () {
+		${1}
+	}
