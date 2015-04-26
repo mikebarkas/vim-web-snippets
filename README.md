@@ -3,7 +3,7 @@
 A small collection of basic snippets used in Web development.
 
 
-Includes: HTML, CSS, PHP, ... (_under development: SCSS, JS, JQUERY, PY_)
+Includes: HTML, CSS, PHP, JS, Meteor, ... (_under development: SCSS, JQUERY, PY_)
 
 ----
 
