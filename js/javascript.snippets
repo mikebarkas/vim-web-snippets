@@ -18,6 +18,11 @@ snippet tempevent
 		${2}
 	});
 
+snippet eventhandle
+	'${1:selector}': function (e, tmpl) {
+		${2}
+	}
+
 
 # Pub Sub
 snippet pub
@@ -86,3 +91,21 @@ snippet startup
 	Meteor.startup(function () {
 		${1}
 	}
+
+
+# Collections
+snippet newcol
+	${1:Name} = new Mongo.Collection('${2:name}');
+
+snippet findone
+	var ${1:var} = ${2:Collection}.findOne(${3:_id:});
+
+snippet insert
+	${1:Collection}.insert({
+		${2}
+	});
+
+snippet update
+	${1:Collection}.update({
+		${2}
+	});
