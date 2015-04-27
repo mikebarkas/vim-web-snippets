@@ -67,8 +67,10 @@ snippet footer
 
 snippet p
 	<p>${1}</p>
+
 snippet p.
 	<p class="${1}">${2}</p>
+
 snippet img
 	<img class="${1}" src="${2}" alt="${3}" />
 
@@ -77,14 +79,19 @@ snippet img
 #
 snippet h1
 	<h1>${1}</h1>
+
 snippet h1.
 	<h1 class="${1}">${2}</h1>
+
 snippet h2
 	<h2>${1}</h2>
+
 snippet h2.
 	<h2 class="${1}">${2}</h2>
+
 snippet h3
 	<h3>${1}</h3>
+
 snippet h3.
 	<h3 class="${1}">${2}</h3>
 
@@ -93,16 +100,22 @@ snippet h3.
 #
 snippet .
 	class="${1}"${2}
+
 snippet #
 	id="${1}"${2}
+
 snippet alt
 	alt="${1}"
+
 snippet href
 	href="${1}"
+
 snippet name
 	name="${1}"
+
 snippet rel
 	rel="${1}"
+
 snippet src
 	src="${1}"
 
@@ -141,12 +154,16 @@ snippet ol.
 #
 snippet a
 	<a href="${1:#}">${0:$1}</a>
+
 snippet a.
 	<a class="${1}" href="${2:#}">${0}</a>
+
 snippet a#
 	<a id="${1}" href="${2:#}">${0}</a>
+
 snippet a.ext
 	<a class="${1:external-link}" href="${2:#}" target="_blank">${0}</a>
+
 snippet a.mail
 	<a class="${1:email-link}" href="mailto:${2:name@email.net}?subject=${3:subject}">${0:Email}</a>
 
@@ -191,3 +208,4 @@ snippet with
 	{{#with $[1}}}
 		${2}
 	{{/with}}
+
