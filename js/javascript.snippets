@@ -2,6 +2,60 @@
 # Javascript Snippets
 #
 
+# Functions
+snippet func
+	function ${1:function name} (${2}) {
+		${3}
+	}
+
+snippet af
+	function (${1}) {
+		${2}
+	}
+
+snippet vaf
+	var ${1:var name} = function (${2}) {
+		${3}
+	}
+
+snippet vf
+	var ${1: var name} = function ${2:function name} (${3}) {
+		${4}
+	}
+
+snippet (f
+	(function (${1}) {
+		${3}
+	}(${2}));
+
+
+# Objects
+snippet obj-
+	var ${1:obj} = {};
+
+snippet obj
+	var ${1:obj} = {
+		${2}
+	}
+
+snippet obj+
+	var ${1:obj} = {
+		${2:propName}:	"${3:value}",
+		${4:porpName}:	"${5:value}"
+	}
+
+snippet prop
+	${1:propName}: "${2:value}"
+
+snippet meth
+	${1:methodName}: function (${2:arg}) {
+		${3}
+	}
+
+snippet proto
+	${1:Class}.prototype.${2:methodName} = function (${3}) {
+		${4}
+	}
 
 #
 # Meteor Javascript Snippets
