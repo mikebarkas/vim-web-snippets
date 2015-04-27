@@ -2,6 +2,13 @@
 # Javascript Snippets
 #
 
+# Docblock
+snippet /*
+	/**
+	 * ${1:Description}
+	 */
+
+
 # Functions
 snippet func
 	function ${1:function name} (${2}) {
@@ -56,6 +63,34 @@ snippet proto
 	${1:Class}.prototype.${2:methodName} = function (${3}) {
 		${4}
 	}
+
+snippet ret
+	return ${1:result};
+
+
+# Conditional
+snippet if
+	if (${1:true}) {
+		${2}
+	}
+
+
+
+# Get DOM Elements
+snippet by.
+	${1:document}.getElementsByClassName('${2:class}')
+snippet by#
+	${1:document}.getElementById('${2:id}')
+
+
+# Debugging
+snippet cl
+	console.log(${1});
+snippet cdir
+	console.dir(${1:obj});
+snippet cd
+	console.debug(${1});
+
 
 #
 # Meteor Javascript Snippets
