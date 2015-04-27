@@ -8,10 +8,9 @@ snippet /*
 	 * ${1:Description}
 	 */
 
-
 # Functions
 snippet func
-	function ${1:function name} (${2}) {
+	function ${1:funcName} (${2}) {
 		${3}
 	}
 
@@ -21,12 +20,12 @@ snippet af
 	}
 
 snippet vaf
-	var ${1:var name} = function (${2}) {
+	var ${1:varName} = function (${2}) {
 		${3}
 	}
 
 snippet vf
-	var ${1: var name} = function ${2:function name} (${3}) {
+	var ${1: varName} = function ${2:funcName} (${3}) {
 		${4}
 	}
 
@@ -34,7 +33,6 @@ snippet (f
 	(function (${1}) {
 		${3}
 	}(${2}));
-
 
 # Objects
 snippet obj-
@@ -66,31 +64,28 @@ snippet proto
 
 snippet ret
 	return ${1:result};
-
-
 # Conditional
 snippet if
 	if (${1:true}) {
 		${2}
 	}
 
-
-
 # Get DOM Elements
 snippet by.
-	${1:document}.getElementsByClassName('${2:class}')
-snippet by#
-	${1:document}.getElementById('${2:id}')
+	${1:document}.getElementsByClassName('${2:class}');
 
+snippet by#
+	${1:document}.getElementById('${2:id}');
 
 # Debugging
 snippet cl
 	console.log(${1});
+
 snippet cdir
 	console.dir(${1:obj});
+
 snippet cd
 	console.debug(${1});
-
 
 #
 # Meteor Javascript Snippets
@@ -112,7 +107,6 @@ snippet eventhandle
 		${2}
 	}
 
-
 # Pub Sub
 snippet pub
 	Meteor.publish('${1:name}', function () {
@@ -121,7 +115,6 @@ snippet pub
 
 snippet sub
 	Meteor.subscribe('${1:name}');
-
 
 # Iron Router
 snippet route
@@ -141,13 +134,12 @@ snippet routeconf
 		${1}
 	});
 
-
 # Session
 snippet sset
 	Session.set('${1:key}', ${2:value});
+
 snippet sget
 	Session.get('${1:key}');
-
 
 # Tracker
 snippet auto
@@ -157,7 +149,6 @@ snippet auto
 
 snippet newtrack
 	var ${1:newDep} = new Tracker.Dependency;
-
 
 # Environment
 snippet client
@@ -169,7 +160,6 @@ snippet server
 	if (Meteor.isServer) {
 		${1}
 	}
-
 
 # RPC
 snippet methods
@@ -184,7 +174,6 @@ snippet asynccall
 
 snippet synccall
 	var ${1:result} = Meteor.call('${2}');
-
 
 # Startup
 snippet startup
