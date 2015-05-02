@@ -169,7 +169,7 @@ snippet form
 	</form>
 
 snippet	input
-	<input type="${1:text}" class="${2}" name="${3}" id="${4}" value="${5}" />
+	<input type="${1:text}" class="${2}" name="${3}" id="${4}" value="${5}" placeholder="${6}" />
 
 #
 # Meteor HTML Snippets
@@ -188,7 +188,7 @@ snippet each
 	{{/each}}
 
 snippet link
-	{{#linkTo "${1}"}}
+	{{#linkTo route="${1}"}}
 		${2}
 	{{/linkTo}}
 
@@ -201,4 +201,9 @@ snippet with
 	{{#with $[1}}}
 		${2}
 	{{/with}}
+
+snippet ifuser
+	{{#if currentUser}}
+		${1}
+	{{/if}}
 
