@@ -119,77 +119,72 @@ snippet route
 		controller:	'${3}',
 		action: '${4}'
 	});
-
 snippet routemap
 	Router.map(function () {
 		${1}
 	});
-
 snippet routeconf
 	Router.configure({
 		${1}
 	});
-
+#
 # Session
+#
 snippet sset
 	Session.set('${1:key}', ${2:value});
-
 snippet sget
 	Session.get('${1:key}');
-
+#
 # Tracker
+#
 snippet auto
 	Tracker.autorun(functon (c) {
 		${1}
 	});
-
 snippet newtrack
 	var ${1:newDep} = new Tracker.Dependency;
-
+#
 # Environment
+#
 snippet client
 	if (Meteor.isClient) {
 		${1}
 	}
-
 snippet server
 	if (Meteor.isServer) {
 		${1}
 	}
-
+#
 # RPC
+#
 snippet methods
 	Meteor.methods({
 		${1}
 	});
-
 snippet asynccall
 	Meteor.call('${1}', function (e, res) {
 		${2}
 	}
-
 snippet synccall
 	var ${1:result} = Meteor.call('${2}');
-
+#
 # Startup
+#
 snippet startup
 	Meteor.startup(function () {
 		${1}
 	}
-
-
+#
 # Collections
+#
 snippet newcol
 	${1:Name} = new Mongo.Collection('${2:name}');
-
 snippet findone
 	var ${1:var} = ${2:Collection}.findOne(${3:_id:});
-
 snippet insert
 	${1:Collection}.insert({
 		${2}
 	});
-
 snippet update
 	${1:Collection}.update({
 		${2}
